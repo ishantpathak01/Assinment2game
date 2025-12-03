@@ -1,1 +1,90 @@
+🏎️ Console Racing Game in C
+Overview
 
+This is a simple console-based racing game developed in C using Dev-C++.
+You control a racing car (@) that moves across three lanes and avoids obstacles (O).
+The game features a unique colorful score system and a button-style Game Over screen.
+
+Features
+
+Simple gameplay: Move left or right to avoid obstacles.
+
+Smooth animation: The car and obstacles move smoothly in the console.
+
+Score system: Colorful, animated score bar updates as you survive.
+
+Restart/quit buttons: Game Over screen shows clickable-looking buttons.
+
+Single player: Fun and addictive gameplay.
+
+Controls
+
+Left Arrow (←): Move car to the left lane.
+
+Right Arrow (→): Move car to the right lane.
+
+R: Restart the game after Game Over.
+
+Q: Quit the game after Game Over.
+
+Gameplay
+
+The car (@) moves in 3 lanes.
+
+Obstacles (O) appear randomly in any lane.
+
+Avoid obstacles until the step counter reaches the end.
+
+Each successful pass increases the score by 1.
+
+When the car collides with an obstacle, the Game Over screen appears.
+
+Example Game Over Screen
+  GAME OVER!
+  Final Score: 12
+
++------------------+    +------------------+
+|     RESTART      |    |      QUIT        |
++------------------+    +------------------+
+   Press R                       Press Q
+
+How to Run
+
+Open Dev-C++ (or any Windows C compiler).
+
+Copy the full code into a new project.
+
+Compile and run.
+
+Use arrow keys to move and avoid obstacles.
+
+Code Structure
+
+main() → Starts the game loop and handles restarts.
+
+playGame() → Core game function, handles car movement, obstacle generation, and collision detection.
+
+drawScoreBar() → Draws a colorful score bar that changes color based on current score.
+
+color(int c) → Changes console text color for visual effects.
+
+Dependencies
+
+Windows OS (Uses windows.h for console colors and Sleep())
+
+Dev-C++ (or any C compiler supporting Windows console)
+
+Customization Ideas
+
+Add multiple obstacles or faster speeds as score increases.
+
+Include sound effects using Beep().
+
+Change car character for variety (@, #, or ASCII art).
+
+Add lives or power-ups.
+
+Author
+
+Your Name
+A simple C console game for learning loops, conditionals, and console graphics.
